@@ -37,11 +37,8 @@ string Money::processChange() {
     cin >> hundreds >> tens >> fives >> ones >> quarters >> dimes >> nickels >> pennies;
 
     //Calculations
-    total = static_cast<double>(hundreds) * 100 + static_cast<double>(tens) * 10 
-        + static_cast<double>(fives) * 5 
-        + static_cast<double>(ones) * 1
-        + static_cast<double>(quarters) * 0.25 + static_cast<double>(dimes) * 0.10 
-        + static_cast<double>(nickels) * 0.05 + static_cast<double>(pennies) * 0.01;
+    total = static_cast<double>(hundreds) * 100 + static_cast<double>(tens) * 10  + static_cast<double>(fives) * 5 + static_cast<double>(ones) * 1
+        + static_cast<double>(quarters) * 0.25 + static_cast<double>(dimes) * 0.10 + static_cast<double>(nickels) * 0.05 + static_cast<double>(pennies) * 0.01;
 
     //Output
     ss << toString() << " = " << toCurrency(total);
