@@ -18,7 +18,7 @@ using namespace std;
 class Money
 {
 private:
-    double total, cost; //added cost
+    double total,cost; //added cost
     int hundreds, tens, fives, ones, quarters, dimes, nickels, pennies, dollars, cents; //addrd pennies and dollars 
     float inputAmount;//added this 
     
